@@ -1,0 +1,632 @@
+<section>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="py-12 md:py-20">
+
+            <!-- Section header -->
+            <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+                <h2 class="h2 font-playfair-display text-slate-800">Compare plans by features</h2>
+            </div>
+
+            <!-- Tables -->
+            <div class="space-y-4 mb-12">
+                <!-- Table (Tidy Essential) -->
+                <div class="overflow-x-auto" data-aos="fade-up">
+                    <table class="table-auto w-full border-b border-slate-200">
+                        <!-- Table header -->
+                        <thead>
+                            <tr class="text-base sm:text-lg text-slate-800">
+                                <th class="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Tidy Essential</th>
+                                <th class="text-bold text-center px-2 py-4">Essential</th>
+                                <th class="text-bold text-center px-2 py-4">Premium</th>
+                                <th class="text-bold text-center px-2 py-4">Advanced</th>
+                            </tr>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Monthly fees</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">$49/mo</td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">$79/mo</td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">$129/mo</td>
+                            </tr>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Free trial</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>    
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Startup Plan</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Contributors</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">Up to 2</td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">Up to 10</td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">Unlimited</td>
+                            </tr>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Virtual Desk</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Incoming Transfers</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">20</td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">50</td>
+                                <td class="text-sm px-2 py-4 text-center italic text-slate-800">Unlimited</td>
+                            </tr>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Automate Tasks</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>                        
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div class="flex items-center space-x-2">
+                                            <div>Analytics</div>
+                                            <div class="inline-flex text-xs font-semibold py-px px-2 text-emerald-700 bg-emerald-200 rounded-full">Soon</div>
+                                        </div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>                        
+                        </tbody>
+                    </table>
+                </div>
+    
+                <!-- Table (Tidy Advanced) -->
+                <div class="overflow-x-auto" data-aos="fade-up">
+                    <table class="table-auto w-full border-b border-slate-200">
+                        <!-- Table header -->
+                        <thead>
+                            <tr class="text-base sm:text-lg text-slate-800">
+                                <th class="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Tidy Advanced</th>
+                                <th class="text-bold text-center px-2 py-4 sm:invisible">Essential</th>
+                                <th class="text-bold text-center px-2 py-4 sm:invisible">Premium</th>
+                                <th class="text-bold text-center px-2 py-4 sm:invisible">Advanced</th>
+                            </tr>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Custom Labels</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>    
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Visitor Access</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <!-- Row -->
+                            <tr class="border-t first:border-t-2 border-slate-200">
+                                <td class="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                                    <div class="flex items-center justify-between max-w-xs">
+                                        <div>Traffic Tracking</div>
+                                        <!-- Tooltip -->
+                                        <div
+                                            class="relative ml-2"
+                                            x-data="{ open: false }"
+                                            @mouseenter="open = true"
+                                            @mouseleave="open = false"                                    
+                                        >
+                                            <button
+                                                class="block"
+                                                aria-haspopup="true"
+                                                :aria-expanded="open"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                @click.prevent
+                                            >
+                                                <svg class="w-4 h-4 fill-current text-slate-400 shrink-0" viewBox="0 0 16 16">
+                                                    <path d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8Zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6ZM7 7h2v5H7V7Zm1-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                                                </svg>
+                                            </button>
+                                            <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
+                                                <div
+                                                    class="min-w-[12rem] bg-slate-800 p-2 rounded overflow-hidden mb-2"
+                                                    x-show="open"
+                                                    x-transition:enter="transition ease-out duration-200 transform"
+                                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                                    x-transition:leave="transition ease-out duration-200"
+                                                    x-transition:leave-start="opacity-100"
+                                                    x-transition:leave-end="opacity-0"
+                                                    x-cloak
+                                                >
+                                                    <div class="text-xs text-slate-100">Keep team shipping simple and take control of your company.</div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium"></td>
+                                <td class="text-sm px-2 py-4 text-center font-medium">
+                                    <svg class="w-3 h-3 fill-current text-emerald-500 inline-flex" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                                    </svg>
+                                </td>
+                            </tr>                                             
+                        </tbody>
+                    </table>
+                </div>            
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <a class="btn text-white bg-blue-600 hover:bg-blue-700 group" href="request-demo.html">
+                    Request Demo <span class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+                            
