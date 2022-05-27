@@ -12,6 +12,7 @@
 /build
 /public
 .cache
+dist
 
 # misc
 .DS_Store
