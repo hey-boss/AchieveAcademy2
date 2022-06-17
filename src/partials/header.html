@@ -108,7 +108,7 @@
             <div class="flex md:hidden" x-data="{ expanded: false }">
 
                 <!-- Hamburger button -->
-                <!-- <button
+                <button
                     class="hamburger"
                     :class="{ 'active': expanded }"
                     @click.stop="expanded = !expanded"
@@ -121,15 +121,11 @@
                         <rect y="11" width="24" height="2" />
                         <rect y="18" width="24" height="2" />
                     </svg>
-                </button> -->
+                </button>
 
                 <!-- Mobile navigation -->
 
-                <li>
-                    <a class="flex font-medium text-blue-600 py-2 group" href="https://achieveacademy.talentlms.com/">Student login <span class="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
-                </li>
-
-                <!-- <nav
+                <nav
                     id="mobile-nav"
                     class="absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-scroll no-scrollbar bg-white"
                     @click.away="expanded = false"
@@ -143,14 +139,14 @@
                     x-transition:leave-end="opacity-0"                    
                     x-cloak
                 >
-                    <ul class="px-5 py-2"> 
-                        <li>
-                            <a class="flex font-medium text-slate-800 hover:text-blue-600 py-2" href="pricing.html">Pricing</a>
-                        </li> 
+                    <ul class="px-5 py-2">
                         <li>
                             <a class="flex font-medium text-slate-800 hover:text-blue-600 py-2" href="about.html">About</a>
                         </li>
                         <li>
+                            <a class="flex font-medium text-slate-800 hover:text-blue-600 py-2"  href="request-demo.html">Contact Us</a>
+                        </li> 
+                        <!-- <li>
                             <a class="flex font-medium text-slate-800 hover:text-blue-600 py-2" href="blog.html">Blog</a>
                         </li>
                         <li>
@@ -169,12 +165,12 @@
                         </li> -->
                         <!-- <li>
                             <a class="flex font-medium w-full text-slate-800 hover:text-blue-600 py-2" href="signin.html">Sign in</a>
-                        </li> 
+                        </li>  -->
                         <li>
                             <a class="flex font-medium text-blue-600 py-2 group" href="https://achieveacademy.talentlms.com/">Student login <span class="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
                         </li>
                     </ul>
-                </nav>-->
+                </nav>
 
             </div>
 
