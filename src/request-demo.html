@@ -4,6 +4,36 @@
 <head>
     <meta charset="utf-8">
     <title>Contact Us - Achieve Academy</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script>
+
+        (function () {
+        emailjs.init('u_eyBUUS39ZLm0AqE');
+        }());
+
+        function sendmail() {
+        const form = document.getElementById('form');
+        const alertMessage = document.getElementById('alertMessage');
+
+        const serviceID = 'gmail';
+        const templateID = 'template_j2my99a';
+
+        emailjs.sendForm(serviceID, templateID, form, 'u_eyBUUS39ZLm0AqE')
+            .then(() => {
+            alertMessage.innerHTML = 'Email successfully sent';
+            alertMessage.style.color = 'green';
+            setTimeout(() => {
+                form.innerHTML = '';
+            }, 3000);
+            }, (err) => {
+            alertMessage.innerHTML = 'Error Occured - Call me please';
+            alertMessage.style.color = 'red';
+            });
+        }
+
+    </script>
 </head>
 
 <body class="font-inter antialiased bg-white text-slate-800 tracking-tight">
@@ -24,15 +54,15 @@
                         <h1 class="h2 font-playfair-display text-slate-800 mt-10 mb-12">Contact Us</h1>
     
                         <!-- Form -->
-                        <form>
+                        <form id="form" onsubmit="sendmail(); return false" class="%YONGHUN%">
                             <div class="space-y-4">
                                 <div>
                                     <label class="block text-sm font-medium mb-1" for="email">Email <span class="text-rose-500">*</span></label>
-                                    <input id="email" class="form-input py-2 w-full" type="email" required />
+                                    <input id="email" class="form-input py-2 w-full" name="email" type="email" required />
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium mb-1" for="name">Contact Name <span class="text-rose-500">*</span></label>
-                                    <input id="name" class="form-input py-2 w-full" type="text" required />
+                                    <input id="name" class="form-input py-2 w-full" name="name" type="text" required />
                                 </div>
                                 <!-- <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                                     <div class="sm:w-1/2">
@@ -49,8 +79,8 @@
                                     <input id="address" class="form-input py-2 w-full" type="text" required />
                                 </div> -->
                                 <div>
-                                    <label class="block text-sm font-medium mb-1" for="country">Which program are you interested in? <span class="text-rose-500">*</span></label>
-                                    <select id="country" class="form-select py-2 w-full" required>
+                                    <label class="block text-sm font-medium mb-1" for="program">Which program are you interested in? <span class="text-rose-500">*</span></label>
+                                    <select id="program" name="program" class="form-select py-2 w-full" required>
                                         <option>SAT / ACT Prep</option>
                                         <option>College Consulting</option>
                                         <option>Private Tutoring</option>
@@ -59,11 +89,12 @@
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium mb-1" for="message">Message <span class="text-rose-500">*</span></label>
-                                    <textarea id="message" class="form-input py-2 w-full" cols="40" rows="5" required></textarea>
+                                    <textarea id="message" name="message" class="form-input py-2 w-full" cols="40" rows="5" required></textarea>
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <button class="btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group">
+                                <div id="alertMessage"></div>
+                                <button type="submit" class="btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group">
                                     Submit <span class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                                 </button>
                             </div>
