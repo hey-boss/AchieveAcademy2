@@ -42,9 +42,9 @@ const copy = new CopyWebpackPlugin({
     {
       from: 'images',
       to: 'images',
-      globOptions: {
-        ignore: ['**/favicon.*'],
-      },
+      // globOptions: {
+      //   ignore: ['**/favicon.*'],
+      // },
     },
   ],
 });
