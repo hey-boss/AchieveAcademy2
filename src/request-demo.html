@@ -17,13 +17,14 @@
         function sendmail() {
         const form = document.getElementById('form');
         const alertMessage = document.getElementById('alertMessage');
-
+        const contactUS = document.getElementById('contactUS');
         const serviceID = 'gmail';
         const templateID = 'template_j2my99a';
 
         emailjs.sendForm(serviceID, templateID, form, 'u_eyBUUS39ZLm0AqE')
             .then(() => {
             alertMessage.innerHTML = 'Email successfully sent';
+            contactUS.innerHTML = 'Thank you for your submission!';
             alertMessage.style.color = 'green';
             setTimeout(() => {
                 form.innerHTML = '';
@@ -52,7 +53,7 @@
                         <a class="md:text-sm text-slate-500 mb-5 hover:text-blue-600" href="/AchieveAcademy2">&larr; Back to Home</a>
 
         
-                        <h1 class="h2 font-playfair-display text-slate-800 mt-10 mb-12">Contact Us</h1>
+                        <h1  id="contactUS" class="h2 font-playfair-display text-slate-800 mt-10 mb-12">Contact Us</h1>
     
                         <!-- Form -->
                         <form id="form" onsubmit="sendmail(); return false" class="%YONGHUN%">
