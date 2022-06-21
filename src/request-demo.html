@@ -24,10 +24,10 @@
         emailjs.sendForm(serviceID, templateID, form, 'u_eyBUUS39ZLm0AqE')
             .then(() => {
             alertMessage.innerHTML = 'Email successfully sent';
-            contactUS.innerHTML = 'Thank you for your submission!';
             alertMessage.style.color = 'green';
             setTimeout(() => {
                 form.innerHTML = '';
+                contactUS.innerHTML = 'Thank you for your submission!';
             }, 3000);
             }, (err) => {
             alertMessage.innerHTML = 'Error Occured - Call me please';
