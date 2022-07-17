@@ -11,7 +11,7 @@
     <script>
 
         (function () {
-        emailjs.init('2Dx_QYicKvY_TsVDg');
+        emailjs.init('hWg43O1mZgj8RXfV-');
         }());
 
         function sendmail() {
@@ -19,9 +19,9 @@
         const alertMessage = document.getElementById('alertMessage');
         const contactUS = document.getElementById('contactUS');
         const serviceID = 'gmail';
-        const templateID = 'template_9qgmw7s';
+        const templateID = 'template_nbz1n7y';
 
-        emailjs.sendForm(serviceID, templateID, form, '2Dx_QYicKvY_TsVDg')
+        emailjs.sendForm(serviceID, templateID, form, 'hWg43O1mZgj8RXfV-')
             .then(() => {
             alertMessage.innerHTML = 'Email successfully sent';
             alertMessage.style.color = 'green';
