@@ -19,11 +19,14 @@
         const contactUS = document.getElementById('contactUS');
         const serviceID = 'gmail';
         const templateID = 'template_nbz1n7y';
+        document.getElementById('submitButton').disabled = true;
+        document.getElementById('submitButton').innerHTML = "Processing..."
 
         emailjs.sendForm(serviceID, templateID, form, 'hWg43O1mZgj8RXfV-')
             .then(() => {
             alertMessage.innerHTML = 'Email successfully sent';
             alertMessage.style.color = 'green';
+            document.getElementById('submitButton').innerHTML = "sent";
             setTimeout(() => {
                 form.innerHTML = '';
                 contactUS.innerHTML = 'Thank you for your submission!';
@@ -95,7 +98,7 @@
                             </div>
                             <div class="mt-6">
                                 <div id="alertMessage"></div>
-                                <button type="submit" class="btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group">
+                                <button id="submitButton" type="submit" class="btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group">
                                     Submit <span class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                                 </button>
                             </div>
@@ -176,6 +179,6 @@
 
     </main>
 
-<script src="main.4160af9ec2e311ab610d.js"></script></body>
+<script src="main.97ede94dbe81c6c7c3fd.js"></script></body>
 
 </html>
