@@ -1,0 +1,35 @@
+<div class="fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-50 ">
+  <div class="bg-white p-6 rounded-lg relative sm:w-96 md:w-3/4 lg:w-2/3 xl:w-1/2 h-[80%]">
+    <img src="https://heyboss-component-library-images.s3.amazonaws.com/Shumi+Opera+Dinner+Show.png" alt="Background Image" class="w-full h-[70%] rounded-lg mb-4">
+
+    <!-- <div class="text-center">
+      <h2 class="text-xl font-bold mb-2">Popup Title</h2>
+      <p class="text-sm text-gray-700 mb-4">Popup content goes here...</p>
+    </div> -->
+
+    <div class="text-center">
+      <h2 class="text-xl font-bold mb-2">Popup Title</h2>
+      <div class="text-left text-sm text-gray-700 mb-4">
+        <p class="mb-2">Luxury Popup Event</p>
+        <p class="mb-2">Date: March 25th, 2024</p>
+        <p class="mb-2">Time: 7:00 PM</p>
+        <p class="mb-2">Location: The Grand Ballroom</p>
+        <p class="mb-2">Dress Code: Formal Attire</p>
+        <p>Price: $200 per person</p>
+      </div>
+    </div>
+
+
+    <button class="absolute top-0 right-0 m-4 text-gray-600 hover:text-gray-900" onclick="closePopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  function closePopup() {
+    document.querySelector('.fixed').classList.add('hidden');
+  }
+</script>
