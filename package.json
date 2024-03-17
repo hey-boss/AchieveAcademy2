@@ -13,7 +13,6 @@
     "d0": "rimraf dist",
     "d1": "npm run build",
     "d2": "gh-pages -d dist"
-
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
@@ -57,7 +56,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
-    "alpinejs": "^3.7.0",
+    "alpinejs": "3.7.0",
     "aos": "^3.0.0-beta.6",
     "focus-visible": "^5.2.0",
     "webpack-dev-server": "^3.11.2"
