@@ -33,3 +33,8 @@ Premium HTML templates come with a ready-made `netlify.toml` file to allow you d
 We are shipping our templates with Webpack to let you quickly get into the development process, but we don't discourage you from using any other build tool. So, please note that any request dealing with Webpack (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
 
 For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].# AchieveAcademy2
+
+
+Please use node version below, so that no issues on release.
+$ nvm use 16
+Now using node v16.20.2 (npm v8.19.4)
