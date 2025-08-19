@@ -24,3 +24,20 @@
 
 // Import AOS compiled CSS instead of SCSS to avoid deprecation warnings
 @import '~aos/dist/aos.css';
+
+// Custom AOS animation distance (원래 $aos-distance: 10px 설정 복원)
+// AOS 기본값은 100px이지만, 10px로 오버라이드
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+  &[data-aos="fade-up"] {
+    transform: translate3d(0, 10px, 0);
+  }
+  &[data-aos="fade-down"] {
+    transform: translate3d(0, -10px, 0);
+  }
+  &[data-aos="fade-left"] {
+    transform: translate3d(10px, 0, 0);
+  }
+  &[data-aos="fade-right"] {
+    transform: translate3d(-10px, 0, 0);
+  }
+}
