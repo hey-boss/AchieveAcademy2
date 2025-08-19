@@ -1,14 +1,18 @@
+// Additional styles
+@use 'additional-styles/utility-patterns.scss';
+@use 'additional-styles/range-slider.scss';
+@use 'additional-styles/toggle-switch.scss';
+@use 'additional-styles/theme.scss';
+
+// AOS styles  
+@use 'node_modules/aos/src/sass/aos.scss' with (
+  $aos-distance: 10px
+);
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400&display=fallback');
 
 @tailwind base;
 @tailwind components;
-
-// Additional styles
-@import 'additional-styles/utility-patterns.scss';
-@import 'additional-styles/range-slider.scss';
-@import 'additional-styles/toggle-switch.scss';
-@import 'additional-styles/theme.scss';
-
 @tailwind utilities;
 
 // Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives#layer
@@ -22,7 +26,3 @@
 [x-cloak] {
     display: none;
 }
-
-// AOS styles
-$aos-distance: 10px;
-@import 'node_modules/aos/src/sass/aos.scss';
