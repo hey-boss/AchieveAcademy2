@@ -4,11 +4,6 @@
 @use 'additional-styles/toggle-switch.scss';
 @use 'additional-styles/theme.scss';
 
-// AOS styles  
-@use 'node_modules/aos/src/sass/aos.scss' with (
-  $aos-distance: 10px
-);
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400&display=fallback');
 
 @tailwind base;
@@ -26,3 +21,6 @@
 [x-cloak] {
     display: none;
 }
+
+// Import AOS compiled CSS instead of SCSS to avoid deprecation warnings
+@import '~aos/dist/aos.css';
